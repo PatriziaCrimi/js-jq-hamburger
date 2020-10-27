@@ -35,6 +35,8 @@ x_icon[0].onclick = function() {
 $('.header-right > a').click(function() {
   $('.hamburger-menu').addClass('active');
   /* Alternative Solutions
+  $('.hamburger-menu').toggle();
+  $('.hamburger-menu').toggleClass('active');
   $('.hamburger-menu').show();
   $('.hamburger-menu').fadeIn();
   $('.hamburger-menu').css('display', 'block'); // --> NOT RECOMMENDED
@@ -44,6 +46,8 @@ $('.header-right > a').click(function() {
 $('.hamburger-menu > a').click(function() {
   $('.hamburger-menu').removeClass('active'); // --> reverse "add.Class"
   /* Alternative Solutions
+  $('.hamburger-menu').toggle();
+  $('.hamburger-menu').toggleClass('active');
   $('.hamburger-menu').hide(); // --> reverse "show"
   $('.hamburger-menu').fadeOut(); // --> reverse "fadeIn"
   $('.hamburger-menu').css('display', 'block'); // --> NOT RECOMMENDED
