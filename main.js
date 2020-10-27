@@ -34,8 +34,18 @@ x_icon[0].onclick = function() {
 // Click on hamburger-menu icon makes extended menu appear
 $('.header-right > a').click(function() {
   $('.hamburger-menu').addClass('active');
+  /* Alternative Solutions
+  $('.hamburger-menu').show();
+  $('.hamburger-menu').fadeIn();
+  $('.hamburger-menu').css('display', 'block'); // --> NOT RECOMMENDED
+  */
 });
 // Click on "X" icon makes extended menu disappear (back to burger-menu icon)
 $('.hamburger-menu > a').click(function() {
-  $('.hamburger-menu').removeClass('active');
+  $('.hamburger-menu').removeClass('active'); // --> reverse "add.Class"
+  /* Alternative Solutions
+  $('.hamburger-menu').hide(); // --> reverse "show"
+  $('.hamburger-menu').fadeOut(); // --> reverse "fadeIn"
+  $('.hamburger-menu').css('display', 'block'); // --> NOT RECOMMENDED
+  */
 });
